@@ -1038,6 +1038,7 @@
   right: 4px;
 }
 @media all and (max-width: 1000px) {
+   
   .containerCheckout {
     max-width: 1000px;
     margin-top: 100px;

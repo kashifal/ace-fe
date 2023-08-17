@@ -12,9 +12,10 @@
         max-width: 1000px;
         margin-top: 100px;
         min-height: 100%;
-        min-height: 100%;
+        max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
+        gap: 40px;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -175,7 +176,118 @@
 
       .checkout_bottom_text p {
         padding-bottom: 20px;
-        border-bottom: 2px solid rgb(245, 245, 245);
+      }
+
+      .containerCheckoutBanner {
+        margin-top: 20px;
+        background-image: url("./icons/contact_head.png");
+        background-size: contain;
+        background-position: center;
+        height: 200px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .INSIDEcONTAINER {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        gap: 10px;
+        text-align: center;
+      }
+
+      .checkoutTable {
+        height: 200px;
+        background-color: rgb(244, 244, 244);
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        padding: 0px 4px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .checkoutTable table thead tr th {
+        width: 100%;
+        border-bottom: 1px solid black;
+
+        padding: 0px 10px;
+
+        text-align: left;
+      }
+      .checkoutTable table thead tr th {
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .checkoutTable table thead tr th:nth-child(1) {
+        width: 33%;
+        padding: 0px 10px;
+
+        text-align: left;
+      }
+      table {
+        width: 100%;
+      }
+
+      .checkoutTable table thead tr th:nth-child(2) {
+        width: 33%;
+        padding: 0px 10px;
+
+        border-left: 1px solid black;
+        text-align: left;
+      }
+
+      .checkoutTable table thead tr th:nth-child(3) {
+        width: 33%;
+        padding: 0px 10px;
+
+        border-left: 1px solid black;
+        text-align: left;
+      }
+
+      .checkoutTable table tbody tr td {
+        font-size: 15px;
+        font-weight: 400;
+      }
+      .checkoutTable table tbody tr td {
+        padding-top: 20px 10px;
+      }
+
+      .checkoutTable table tbody tr td:nth-child(1) {
+        margin-top: 10px;
+        width: 80px;
+
+        padding: 0px 10px;
+
+        text-align: left;
+      }
+
+      .checkoutTable table tbody tr td:nth-child(2) {
+        width: 80px;
+        border-left: 1px solid black;
+        padding: 0px 10px;
+
+        text-align: left;
+      }
+
+      .checkoutTable table tbody tr td:nth-child(3) {
+        width: 100%;
+        border-left: 1px solid black;
+        padding: 0px 10px;
+
+        text-align: left;
+      }
+      .checkoutTable table tbody tr td {
+        width: 100%;
+
+        text-align: left;
       }
     </style>
   </head>
@@ -395,6 +507,17 @@
       </div>
     </div>
 
+    <!-- Checkout Banner -->
+    <div class="containerCheckoutBanner">
+      <div class="INSIDEcONTAINER">
+        <h1>PAYMENT RECIEVED!</h1>
+        <p>
+          A Growby's home Furnishing manager will call you to complete your
+          agreement and set up your FREE DELIVERY!
+        </p>
+      </div>
+    </div>
+
     <!-- Main -->
     <div class="containerCheckout">
       <div class="checkout_product">
@@ -402,8 +525,8 @@
           <div class="product_card_img">
             <div class="absolute_deal">
               <h1 class="get_this_deal">
-                GET THIS <br />
-                DEAL
+                IT'S ALL <br />
+                YOURS
               </h1>
             </div>
             <img src="./icons/staff.png" alt="" />
@@ -424,65 +547,53 @@
         </div>
       </div>
       <div class="checkout_form">
-        <h1>
-          <sup>$</sup>
-          <span class="prweekHeading">70</span>
-          <sup>.96</sup>
-          <span class="prweek">/ week</span>
-        </h1>
+        <p style="text-align: center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+          assumenda vero eveniet esse officia. Quos enim, porro rerum tempora
+          fuga maxime sequi voluptate, aliquam consequatur, sint voluptates
+          libero temporibus odit!
+        </p>
 
-        <img src="./icons/cards.png" alt="" />
+        <div class="checkoutTable">
+          <table>
+            <thead>
+              <tr>
+                <th>Deposit Amount</th>
+                <th>Paymet Methods</th>
+                <th>Payment Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>$ 25</td>
+                <td>Visa....8998</td>
+                <td>06/13/20023</td>
+              </tr>
+            </tbody>
+          </table>
 
+          <a href="#" style="margin-top: 30px">Print a Reciept</a>
+        </div>
         <form action="" class="contact_form">
-          <div class="form_flask">
-            <div class="checkout_one">
-              <div class="input">
-                Cardholders Name
-                <input type="text" placeholder="Name on card" name="" id="" />
-              </div>
-              <div class="input">
-                Card Number
-                <input
-                  type="text"
-                  placeholder="**** **** **** ****"
-                  name=""
-                  id=""
-                />
-              </div>
-            </div>
-            <div class="checkout_two">
-              <div class="input">
-                Expiration Date
-                <input type="date" placeholder="First Name" name="" id="" />
-              </div>
-              <div class="input">
-                CVV
-                <input type="number" placeholder="000" name="" id="" />
-              </div>
+          <div class="checkout_bottom_text">
+            <div class="" style="margin-top: 30px">
+              <b class="" style="display: block; font-size: 24px"
+                >Questions?
+              </b>
+              <br />
+              <b class="" style="display: block; font-size: 24px"
+                >Contact Your Local Growby's Home Furnishing?
+              </b>
+              <br />
+              <p>401 N Water St Salem, IN 47167</p>
+              <p>(812) 570-0880</p>
             </div>
           </div>
+
           <div class="submit_btn">
-            <button class="checkout_sumit">complete online checkout</button>
+            <button class="checkout_sumit">KEEP SHOPPING</button>
           </div>
         </form>
-
-        <div class="checkout_bottom_text">
-          <p>
-            *This is not the final step of your transaction. A Growby’s Home
-            Furnishings employee will reach out to you shortly to finalize your
-            order.
-          </p>
-
-          <div class="" style="margin-top: 30px">
-            <b class="" style="display: block; font-size: 24px"
-              >Don’t want to pay online?
-            </b>
-            <u>
-              Finish your checkout at the store and get 50% off your first
-              payment.
-            </u>
-          </div>
-        </div>
       </div>
     </div>
 
