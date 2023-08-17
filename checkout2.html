@@ -289,6 +289,20 @@
 
         text-align: left;
       }
+
+      .divider
+      {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-grow: 1;
+      }
+      .divide-line
+      {
+        height: 1px;
+        background-color: black;
+        width: 100px;
+      }
     </style>
   </head>
   <body>
@@ -510,7 +524,13 @@
     <!-- Checkout Banner -->
     <div class="containerCheckoutBanner">
       <div class="INSIDEcONTAINER">
-        <h1>PAYMENT RECIEVED!</h1>
+        <div class="divider">
+          <div class="divide-line"></div>
+          <h1>PAYMENT RECIEVED!</h1>
+          <div class="divide-line"></div>
+
+        </div>
+        
         <p>
           A Growby's home Furnishing manager will call you to complete your
           agreement and set up your FREE DELIVERY!
