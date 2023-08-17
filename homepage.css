@@ -1347,6 +1347,19 @@
 }
 
 @media all and (max-width: 700px) {
+  .divider
+      {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-grow: 1;
+      }
+      .divide-line
+      {
+        height: 1px;
+        background-color: black;
+        width: 0px;
+      }
   .conatinerEmail {
     max-width: 800px;
     height: 100%;
@@ -1618,3 +1631,4 @@
     margin-top: 20px;
   }
 }
+
