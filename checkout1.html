@@ -9,7 +9,7 @@
 
     <style>
       .containerCheckout {
-        max-width: 1000px;
+        max-width: 800px;
         margin-top: 100px;
         min-height: 100%;
         min-height: 100%;
@@ -32,6 +32,9 @@
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
+      }
+      .checkout_form h1{
+        letter-spacing: -0.20rem;
       }
       .product_card {
         min-height: 350px;
@@ -65,8 +68,8 @@
         padding: 4px 8px;
       }
       .light_head {
-        font-size: 16px;
-        font-weight: 400;
+        font-size: 15px;
+        font-weight: 500;
         display: block;
         margin-top: 4px;
       }
@@ -89,7 +92,7 @@
       }
       .get_this_deal {
         font-size: 14px;
-        font-weight: 700;
+        font-weight: 900;
         line-height: 15px;
       }
 
@@ -106,6 +109,7 @@
         flex-direction: column;
         gap: 20px;
         justify-content: space-between;
+        font-weight: 500;
       }
       .checkout_one .input {
         width: 100%;
@@ -126,7 +130,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-
+        font-weight: 500;
         gap: 10px 20px;
 
         justify-content: space-between;
@@ -158,24 +162,56 @@
         padding: 15px 30px;
         margin-left: auto;
         border: 1px solid transparent;
-        font-weight: 600;
+        font-weight: 800;
         margin-right: auto;
+        font-size: larger;
       }
 
       .form_flask {
         margin-top: 30px;
       }
       .prweek {
-        font-size: 15px;
+      font-size: 25px;
+      font-weight: 900;
+
       }
       .checkout_bottom_text {
-        padding: 40px 80px;
+        padding: 20px 30px;
         text-align: center;
       }
 
       .checkout_bottom_text p {
         padding-bottom: 20px;
         border-bottom: 2px solid rgb(245, 245, 245);
+        font-weight: 500;
+      }
+      .checkout-price{
+        font-weight: 900;
+    font-size: larger;
+      }
+      @media (max-width: 980px) {
+        .containerCheckout {
+        min-height: 100%;
+        min-height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .checkout_product{
+        width: auto;
+      }
+
+      .checkout_form{
+        width: 100%;
+      }
+      .checkout_two .input{
+        width: 100%;
+      }
+      .checkout_bottom_text{
+        padding: 10px 30px;
+      }
       }
     </style>
   </head>
@@ -425,13 +461,13 @@
       </div>
       <div class="checkout_form">
         <h1>
-          <sup>$</sup>
+          <sup style="font-weight: 900;">$</sup>
           <span class="prweekHeading">70</span>
-          <sup>.96</sup>
+          <sup class="checkout-price">.96</sup>
           <span class="prweek">/ week</span>
         </h1>
 
-        <img src="./icons/cards.png" alt="" />
+        <img width="200px"  src="./icons/cards.png" alt="" />
 
         <form action="" class="contact_form">
           <div class="form_flask">

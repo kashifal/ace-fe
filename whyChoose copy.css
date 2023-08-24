@@ -1,0 +1,143 @@
+.About-description{
+    background:#ffde16;
+    background-image:url(./icons/Vector\ Smart\ Object\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    margin-top: 10px;
+}
+.description-content{
+    max-width: 700px;
+    margin: auto;
+}
+
+.description-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.description-title{
+    font-weight:bolder;
+    font-size: 14px;
+    padding:8px;
+
+
+}
+.description-text-yellow{
+    font-weight: 600;
+}
+.description-heading{
+    text-align: center;
+    font-weight: bolder;
+}
+.description-text{
+    text-align: center;
+}
+.container-whychoose{
+    background-image: url(./icons/Confetti\ copy\ 5.png);
+    background-position: center;
+    background-size: contain;
+}
+.choose-heading{
+    text-transform: uppercase;
+color: #ee632c;
+font-weight: bolder;
+font-family: "Montserrat";
+text-align: center;
+}
+.whychoose-about-section{
+    max-width: 700px;
+    margin: auto;
+    padding-top:100px;
+    padding-bottom: 100px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right:20px;
+}
+.whychoose-card-black{
+    background: #000000;
+    background-image: url(./icons/Layer\ 1.png);
+    background-position: center;
+    padding: 12px;
+    text-align: center;
+}
+.whychoose-card-black p{
+    font-size: smaller;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 10px;
+
+
+}
+.whychoose-card-black h2{
+    color: #ffde16;
+    font-weight: 900;
+    font-size: medium;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.whyshoose-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Three equal columns */
+    grid-gap: 15px; /* Gap between grid items */
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.whychoose-question{
+    background: #000000;
+    background-image: url(./icons/Vector\ Smart\ Object\ \(2\).png);
+    background-position: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    position: relative;
+    margin-top: 200px;
+
+}
+.whychoose-question-section{
+    color: white;
+
+}
+.whychoose-answer-section{
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.About-btn-container{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .About-start-btn:hover{
+    color: black;
+    text-decoration: none;
+}
+.About-start-btn{
+    background: #ffde16;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.whychoose-question-img{
+    position: absolute;
+    bottom:0 ; 
+    right:20% ;
+}
+
+
+@media (max-width: 768px) { 
+    .whychoose-question-img{
+       display: none;
+    }
+    .whyshoose-card-container {
+        grid-template-columns: 1fr; /* Single column for medium screens */
+        padding: 20px;
+    }
+}

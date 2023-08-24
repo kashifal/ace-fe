@@ -1,0 +1,306 @@
+  
+  p {
+    font-size: 0rem !important;
+    line-height: 0 !important;
+    margin-bottom: 0rem !important;
+    text-rendering:unset;
+}
+  .pd-msg-container h3{ 
+    font-size: large;
+    font-weight: 800;
+  }
+  .pd-msg-container_h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: xx-large;
+  }
+  .pd-msg-container{
+    text-align: center !important;
+  }
+
+
+  .pd-price-number {
+    
+    display: flex;
+    align-items: start;
+    letter-spacing: -0.05em;
+    justify-content: center;
+    margin: 0% !important;
+  }
+  .pd-price-number-h1{
+    font-size: 80px;
+    font-weight:900;
+    display: flex;
+    align-items: start;
+    letter-spacing: -0.05em;
+
+  }
+  .pd-price-number-p{
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+
+
+}
+.pd-price-number-span{
+    font-size: 50px;
+    font-weight: 900;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    letter-spacing: -0.05em;
+
+}
+.pd_term_and_condition_section{
+  text-align: center !important;
+}
+.pd_term_and_condition{
+  font-size: small !important;
+  font-weight: 500;
+  text-align: center;
+}
+
+.pd-discount-price{
+    font-size: large;
+    font-weight: 500;
+    text-align: center;
+}
+.pd-btn-container{
+    background: #ffde16;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+.pd-start-btn{
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase; 
+    text-align: center;
+    margin: auto;
+}
+.pd-continue-btn-container {
+  background: #ffde16;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
+  -webkit-appearance: auto;
+  border-radius: auto;
+  background-color:auto;
+  border-style: auto;
+  border-width: auto;
+  border-color:auto;
+  box-shadow: auto;
+  color: auto;
+  display: auto;
+  margin: auto;
+  padding: 10px 10px !important;
+  height: auto;
+  box-shadow:none; 
+  width: 100%;
+  -webkit-box-sizing: auto;
+  -moz-box-sizing: auto;
+  box-sizing: auto;
+  transition: auto;
+}
+.contact_two .contact_custom_input {
+  width: 100% !important;
+  height: 40px !important;
+  
+  border: 1px solid #d6d4d4 !important;
+}
+
+.pd-continue-start-btn {
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+}
+.pd-btn-container-white{
+    background: #ffffff;
+    padding: 15px;
+    margin-top: 20px;
+    border: 3px solid black;
+    text-align: center;
+
+}
+.pd-start-btn-white{
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase; 
+    text-align: center;
+}
+.product_details-section{
+    display: flex;
+    align-items: start;
+    margin: 100px auto;
+    max-width: 1400px;
+}
+.pd-carousel-section{
+    width: 55%;
+
+}
+.pd-price-section{
+    padding: 0px 70px;
+    width: 45%;
+   
+}
+.card-name{
+  color: black !important;
+}
+
+.career_customer-head h1 {
+  color: black;
+  text-align: start;
+  font-weight:700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.career_customer-section{
+  text-align: start;
+}
+.full-WidthP {
+  padding: 80px 0px;
+  padding-bottom: 120px;
+}
+
+/* PRODUCT DETAILS */
+.contact_headings-select{
+  text-align: start;
+}
+.contact_headings{
+  padding: 0px 50px;
+}
+.contact_form{
+  max-width: 500px;
+  min-height: auto;
+  margin-top: 0px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact_sumit{
+  font-weight: 700 !important;
+  font-size: 20px;
+}
+.pd_trust-cards {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pd-card-continer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: large;
+  font-weight: 700;
+}
+.pd-trust-svg {
+  background: #ee632c;
+  color: #ffde16;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.pd-card-name{
+  font-weight: 500;
+  font-size: medium;
+  margin-top: 10px;
+  text-align: center;
+}
+.pd_accordian_title{
+  font-weight: 800;
+  font-size: x-large;
+}
+.pd_sup_number{
+  font-weight: 800;
+  font-size: 30px;
+}
+.pd_sup_week{
+  font-weight: 500;
+}
+.product-info_description{
+  font-weight: 500;
+}
+.slick-prev, .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border-radius: 50px;
+  outline: none;
+}
+.slick-prev:before, .slick-next:before {
+  color: rgb(146, 146, 146);
+}
+
+@media all and (max-width: 980px){
+  .product_details-section{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.pd-carousel-section {
+  width: 90%;
+  margin: auto;
+
+}
+
+.pd-price-section {
+  width: auto;
+}
+.slick-track{
+  width: 100% !important;
+  margin: auto !important;
+}
+.pd-price-section{
+  padding: 10px 20px;
+}
+.carousel-btn .slick-slide .slick-active{
+    width: 30px !important;
+}
+.slick-next .slick-arrow .slick-disabled{
+  display: none;
+}
+.slick-next .slick-arrow{
+  display: none;
+}
+.carousel-btn .slick-slide{
+  width: 50px !important;
+}
+.carousel-btn .slick-slide .slick-active{
+
+width: 50px !important;
+}
+.carousel-btn .slick-slide .slick-current .slick-active .is-active{
+  width: 50px;
+}
+}

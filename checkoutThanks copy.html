@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./homepage.css" />
+    <link rel="stylesheet" href="./contact.css" />
+
+    <style>
+      .containerCheckout {
+        max-width: 1000px;
+        margin-top: 100px;
+        min-height: 100%;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+      .checkout_product {
+        width: 40%;
+        height: 100%;
+        border: 1px solid rgb(238, 238, 238);
+      }
+      .checkout_form {
+        width: 60%;
+        padding: 10px 4px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+      .product_card {
+        min-height: 350px;
+        width: 100%;
+      }
+      .product_card_img {
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+      }
+      .product_card_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .product_heading {
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .product_info {
+        color: black;
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        margin-top: 10px;
+        padding: 20px 0px;
+      }
+      .product_info {
+        padding: 4px 8px;
+      }
+      .light_head {
+        font-size: 16px;
+        font-weight: 400;
+        display: block;
+        margin-top: 4px;
+      }
+      .absolute_deal {
+        position: absolute;
+        top: -35px;
+        left: -35px;
+        width: 120px;
+        border-radius: 60px;
+        height: 120px;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        text-align: center;
+        flex-direction: column;
+        transform: rotate(-50deg);
+        padding-bottom: 20px;
+        background-color: #ffde16;
+      }
+      .get_this_deal {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 15px;
+      }
+
+      .checkout_form .prweekHeading {
+        font-size: 70px;
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+
+      .checkout_one {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+      }
+      .checkout_one .input {
+        width: 100%;
+      }
+      .checkout_one .input input:nth-child(1) {
+        width: 100%;
+        height: 40px;
+        padding: 0px 10px;
+        margin-top: 4px;
+      }
+      .checkout_one .input input:nth-child(2) {
+        width: 100%;
+        height: 40px;
+        padding: 0px 10px;
+      }
+
+      .checkout_two {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        gap: 10px 20px;
+
+        justify-content: space-between;
+      }
+      .checkout_two .input {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 50%;
+        margin-top: 20px;
+      }
+
+      .checkout_two .input input:nth-child(1) {
+        width: 100%;
+        height: 40px;
+        padding: 0px 10px;
+        margin-top: 4px;
+      }
+      .checkout_headings {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .submit_btn {
+        display: flex;
+        margin-top: 20px;
+      }
+      .checkout_sumit {
+        background-color: #ffde16;
+        padding: 15px 30px;
+        margin-left: auto;
+        border: 1px solid transparent;
+        font-weight: 600;
+        margin-right: auto;
+      }
+
+      .form_flask {
+        margin-top: 30px;
+      }
+      .prweek {
+        font-size: 15px;
+      }
+      .checkout_bottom_text {
+        padding: 40px 80px;
+        text-align: center;
+      }
+
+      .checkout_bottom_text p {
+        padding-bottom: 20px;
+      }
+
+      .containerCheckoutBanner {
+        margin-top: 20px;
+        background-image: url("./icons/contact_head.png");
+        background-size: contain;
+        background-position: center;
+        height: 200px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .INSIDEcONTAINER {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        gap: 10px;
+        text-align: center;
+      }
+
+      .checkoutTable {
+        height: 200px;
+        background-color: rgb(244, 244, 244);
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        padding: 0px 4px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .checkoutTable table thead tr th {
+        width: 100%;
+        border-bottom: 1px solid black;
+
+        padding: 0px 10px;
+
+        text-align: left;
+      }
+      .checkoutTable table thead tr th {
+        font-size: 15px;
+        font-weight: 500;
+      }
+      .checkoutTable table thead tr th:nth-child(1) {
+        width: 33%;
+        padding: 0px 10px;
+
+        text-align: left;
+      }
+      table {
+        width: 100%;
+      }
+
+      .checkoutTable table thead tr th:nth-child(2) {
+        width: 33%;
+        padding: 0px 10px;
+
+        border-left: 1px solid black;
+        text-align: left;
+      }
+
+      .checkoutTable table thead tr th:nth-child(3) {
+        width: 33%;
+        padding: 0px 10px;
+
+        border-left: 1px solid black;
+        text-align: left;
+      }
+
+      .checkoutTable table tbody tr td {
+        font-size: 15px;
+        font-weight: 400;
+      }
+      .checkoutTable table tbody tr td {
+        padding-top: 20px 10px;
+      }
+
+      .checkoutTable table tbody tr td:nth-child(1) {
+        margin-top: 10px;
+        width: 80px;
+
+        padding: 0px 10px;
+
+        text-align: left;
+      }
+
+      .checkoutTable table tbody tr td:nth-child(2) {
+        width: 80px;
+        border-left: 1px solid black;
+        padding: 0px 10px;
+
+        text-align: left;
+      }
+
+      .checkoutTable table tbody tr td:nth-child(3) {
+        width: 100%;
+        border-left: 1px solid black;
+        padding: 0px 10px;
+
+        text-align: left;
+      }
+      .checkoutTable table tbody tr td {
+        width: 100%;
+
+        text-align: left;
+      }
+
+      .divider
+      {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-grow: 1;
+      }
+      .divide-line
+      {
+        height: 1px;
+        background-color: black;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="fullWidth">
+      <div class="containerFluid">
+        <div class="logo_and_location">
+          <div id="btn_cta" class="bars_bg">
+            <img
+              class="img_logo"
+              style="width: auto; height: 24px"
+              src="./icons/ham_bars.png"
+              alt=""
+            />
+          </div>
+          <a href="#">
+            <img class="img_logo" src="./icons/logo.png" alt="" />
+          </a>
+          <a href="#" class="top_location">
+            <!-- svg -->
+            <span
+              ><span class="map_logo"
+                ><img src="./icons/map.png" alt="" />
+              </span>
+              My Store <span class="exact_location">Ashland, OH</span></span
+            >
+          </a>
+        </div>
+        <div class="right_side_bar">
+          <div class="input_div">
+            <input placeholder="Search ACE RTO..." type="text" name="" id="" />
+            <span class="search_bar">
+              <img class="search_icon" src="./icons/search.png" alt="" />
+            </span>
+          </div>
+          <!-- cart -->
+          <div class="main_cart mobile_icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="cart_logo"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+              />
+            </svg>
+          </div>
+          <div class="main_cart mobile_icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="cart_logo"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+          <div class="main_cart">
+            <span class="absolute_number">3</span>
+            <img class="cart_logo" src="./icons/cart.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="overlay_" class="overlay"></div>
+    <div id="sidebar_" class="sidebar">
+      <a href="#">Furniture</a>
+      <a href="#">Furniture</a>
+      <a href="#">Furniture</a>
+      <a href="#">Furniture</a>
+      <a href="#">Furniture</a>
+      <a href="#">Furniture</a>
+      <a href="#">Furniture</a>
+      <a href="#">Furniture</a>
+      <a href="#">Furniture</a>
+      <a href="#">Furniture</a>
+      <a href="#">Furniture</a>
+    </div>
+
+    <!-- navbar links -->
+    <div class="navbar_links">
+      <div class="containerFluid">
+        <div class="all_top_links">
+          <div class="one_link">
+            <div class="link_name">
+              <a href="">Furniture</a>
+              <img class="arrow" src="./icons/arrow.png" alt="" />
+            </div>
+            <div class="sub_links">
+              <a href="#">Furniture</a>
+              <a href="#">Furniture A</a>
+              <a href="#">FurnitureABCD</a>
+              <a href="#">Furniture ASDSD</a>
+              <a href="#">Furniture ASDDSDF</a>
+              <a href="#">ASDSADFF</a>
+              <a href="#">FurniASDSADFture</a>
+            </div>
+          </div>
+          <div class="one_link">
+            <div class="link_name">
+              <a href="">Mattresses</a>
+              <img class="arrow" src="./icons/arrow.png" alt="" />
+            </div>
+            <div class="sub_links">
+              <a href="#">Furniture</a>
+              <a href="#">Furniture A</a>
+              <a href="#">FurnitureABCD</a>
+              <a href="#">Furniture ASDSD</a>
+              <a href="#">Furniture ASDDSDF</a>
+              <a href="#">ASDSADFF</a>
+              <a href="#">FurniASDSADFture</a>
+            </div>
+          </div>
+          <div class="one_link">
+            <div class="link_name">
+              <a href="">Appliances</a>
+              <img class="arrow" src="./icons/arrow.png" alt="" />
+            </div>
+            <div class="sub_links">
+              <a href="#">Furniture</a>
+              <a href="#">Mattresses</a>
+              <a href="#">Appliances</a>
+              <a href="#">Electronics</a>
+              <a href="#">Computers</a>
+              <a href="#">Speciality</a>
+              <a href="#">Tires</a>
+              <a href="#">Locations</a>
+            </div>
+          </div>
+          <div class="one_link">
+            <div class="link_name">
+              <a href="">Electronics</a>
+              <img class="arrow" src="./icons/arrow.png" alt="" />
+            </div>
+            <div class="sub_links">
+              <a href="#">Furniture</a>
+              <a href="#">Furniture A</a>
+              <a href="#">FurnitureABCD</a>
+              <a href="#">Furniture ASDSD</a>
+              <a href="#">Furniture ASDDSDF</a>
+              <a href="#">ASDSADFF</a>
+              <a href="#">FurniASDSADFture</a>
+            </div>
+          </div>
+          <div class="one_link">
+            <div class="link_name">
+              <a href="">Computers</a>
+              <img class="arrow" src="./icons/arrow.png" alt="" />
+            </div>
+            <div class="sub_links">
+              <a href="#">Furniture</a>
+              <a href="#">Furniture A</a>
+              <a href="#">FurnitureABCD</a>
+              <a href="#">Furniture ASDSD</a>
+              <a href="#">Furniture ASDDSDF</a>
+              <a href="#">ASDSADFF</a>
+              <a href="#">FurniASDSADFture</a>
+            </div>
+          </div>
+          <div class="one_link">
+            <div class="link_name">
+              <a href="">Speciality</a>
+              <img class="arrow" src="./icons/arrow.png" alt="" />
+            </div>
+            <div class="sub_links">
+              <a href="#">Furniture</a>
+              <a href="#">Furniture A</a>
+              <a href="#">FurnitureABCD</a>
+              <a href="#">Furniture ASDSD</a>
+              <a href="#">Furniture ASDDSDF</a>
+              <a href="#">ASDSADFF</a>
+              <a href="#">FurniASDSADFture</a>
+            </div>
+          </div>
+          <div class="one_link">
+            <div class="link_name">
+              <a href="">Tires</a>
+            </div>
+          </div>
+
+          <div class="one_link">
+            <div class="link_name">
+              <a href="">Locations</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="pay_online">Pay Online</a>
+      </div>
+    </div>
+
+    <!-- Responsive Input Field -->
+    <div class="responsive_input">
+      <div class="input_div_two">
+        <input placeholder="Search ACE RTO..." type="text" name="" id="" />
+        <span class="search_bar">
+          <img class="search_icon" src="./icons/search.png" alt="" />
+        </span>
+      </div>
+    </div>
+
+    <!-- Checkout Banner -->
+    <div class="containerCheckoutBanner">
+      <div class="INSIDEcONTAINER">
+        <div class="divider">
+          <div class="divide-line"></div>
+          <h1>THANKS!</h1>
+          <div class="divide-line"></div>
+
+        </div>
+        <p>
+          A Growby's home Furnishing manager will call you to complete your
+          agreement and set up your FREE DELIVERY!
+        </p>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div class="containerCheckout">
+      <div class="checkout_product">
+        <div class="product_card">
+          <div class="product_card_img">
+            <div class="absolute_deal">
+              <h1 class="get_this_deal">
+                SO <br />
+                CLOSE!
+              </h1>
+            </div>
+            <img src="./icons/staff.png" alt="" />
+          </div>
+          <div class="product_info">
+            <h1 class="product_heading">$25 GETS IT DELIVERED</h1>
+
+            <h1 class="product_info">
+              Flaybern Dining Table and 4 Chairs and Bench
+              <span class="light_head">
+                Weekly Rate: $00.00
+                <span style="display: block; margin-top: 4px"
+                  >(after 30 days)</span
+                >
+              </span>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="checkout_form">
+         
+        <form action="" class="contact_form">
+          <div class="checkout_bottom_text">
+            <div class="">
+              <b class="" style="display: block; font-size: 24px"
+                >Your Are Almost Done
+              </b>
+              <p>Your product has been reserved and we've confimation information to  the email on file</p>
+              <p>We'll see you on store!</p>
+            </div>
+            <div class="" style="margin-top: 30px">
+              <b class="" style="display: block; font-size: 24px"
+                >Questions?
+              </b>
+              <br />
+              <b class="" style="display: block; font-size: 24px"
+                >Contact Your Local Growby's Home Furnishing?
+              </b>
+              <br />
+              <p>401 N Water St Salem, IN 47167</p>
+              <p>(812) 570-0880</p>
+            </div>
+          </div>
+
+          <div class="submit_btn">
+            <button class="checkout_sumit">KEEP SHOPPING</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="fullWidthEmail">
+      <div class="conatinerEmail">
+        <div class="sign_up">
+          <h1>SIGN UP AND SAVE</h1>
+          <p>Enter your email to receive Ace deals right in your inbox!</p>
+        </div>
+        <div class="input_join_tn">
+          <input placeholder="Enter your email" type="text" name="" id="" />
+          <a href="#">JOIN</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="fullWidthFooter">
+      <div class="containerFooter">
+        <div class="footer_title">
+          <h1>SHOP BY DEPARTMENT</h1>
+          <div class="footer_links">
+            <div class="footer_links_column">
+              <a href="#">Furniture</a>
+              <a href="#">Mattresses</a>
+              <a href="#">Appliance</a>
+              <a href="#">Electronics</a>
+            </div>
+            <div class="footer_links_column">
+              <a href="#">Computers</a>
+              <a href="#">Smartphones</a>
+              <a href="#">Tires</a>
+              <a href="#">Speciality</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer_title">
+          <h1>ABOUT ACE RENT-TO-OWN</h1>
+          <div class="footer_links">
+            <div class="footer_links_column">
+              <a href="#">About us</a>
+              <a href="#">Locations</a>
+              <a href="#">Careers</a>
+              <a href="#">Pay Online</a>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="int_bb">
+          <img src="./icons/integrity.png" alt="" />
+          <img src="./icons/bbbb.png" alt="" />
+        </div>
+        <div class="">
+          <h1 class="" style="color: white; font-size: 10px">
+            Find Your ACE Rent To Own
+          </h1>
+          <div class="location_select">
+            <select name="" id="">
+              <option selected disabled value="1">Choose your location</option>
+              <option value="1">One</option>
+            </select>
+            <div id="select_btn" class="select_drop">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <p class="text_white_fz_14">
+          © 2023 ACE Rent To Own | Sitemap adipisicing elit, sed do eiusm
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const overlay = document.getElementById("overlay_");
+      const sidebar = document.getElementById("sidebar_");
+      const btn_cta = document.getElementById("btn_cta");
+
+      btn_cta.addEventListener("click", () => {
+        overlay.classList.add("showOverlay");
+        sidebar.classList.add("showSidebar");
+      });
+
+      overlay.addEventListener("click", () => {
+        overlay.classList.remove("showOverlay");
+        sidebar.classList.remove("showSidebar");
+      });
+    </script>
+  </body>
+</html>

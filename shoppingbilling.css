@@ -1,0 +1,87 @@
+.billing_headings h2 {
+    font-weight: 800;
+    font-family: "Montserrat";
+    text-align: center;
+}
+.billing-input{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 6px;
+    margin: 20px 0px;
+}
+.billing-input input{
+    padding: 15px;
+    border: 1px solid #d6d4d4 !important;
+    font-weight: 500;
+}
+.billing-input label{
+    font-weight: 500;
+}
+.billing-input-cvv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+.billing-input-custom{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 6px;
+}
+.billing-input-custom input{
+    padding: 15px;
+    border: 1px solid #d6d4d4 !important;
+    font-weight: 500;
+}
+.billing-input-custom label{
+    font-weight: 500;
+}
+.billing-total-price{
+    display: flex;
+    align-items: baseline;
+    padding: 30px 0px;
+}
+.billing-total-price {
+    font-size: medium;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.06rem;
+    text-align: left;
+    margin-left: 5px;
+    color: #333333;
+}
+.billing-total-price h1{
+    font-size: medium;
+    font-weight: 800;
+    line-height: 1.5rem;
+    letter-spacing: 0.06rem;
+    text-align: left;
+    margin-left: 5px;
+    font-size:45px ;
+    color: black;
+}
+.billing-warn-text{
+    padding: 10px ;
+    font-size: small;
+    font-weight: 500;
+}
+.billing-query-section {
+    font-size: medium;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.06rem;
+    text-align: center;
+    margin-left: 5px;
+    color: #333333;
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+}
+.billing-query-section a {
+    font-size:small;
+    line-height: 1.5rem;
+    letter-spacing: 0.06rem;
+    text-align: center;
+    color: #333333;
+}

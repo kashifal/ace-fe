@@ -1,0 +1,31 @@
+  
+  .js .slider-single > div:nth-child(1n+2) { display: none }
+  
+  .js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+  
+
+
+  .slider-nav .carousel_img_large::before {
+    content: "";
+    display: block;
+    padding-top: 75%;
+  }
+  
+
+  
+  .slider-nav .slick-slide { cursor: pointer; }
+  
+  .slick-slide.is-active img {
+    opacity: 0.5;
+    color: #c00;
+    background-color: #dedede;
+    
+  }
+  .carousel-btn{
+    margin: 10px;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    border: 1px solid rgb(195, 193, 193);
+  }
+  .slick-prev .slick-arrow{
+    background-color: gray;
+  }
